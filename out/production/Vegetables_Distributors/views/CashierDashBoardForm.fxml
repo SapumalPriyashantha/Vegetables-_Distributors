@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pic1" prefHeight="886.0" prefWidth="1320.0" style="-fx-background-color: #538e4a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CashierDashBoardFormController">
+    <children>
+        <AnchorPane fx:id="pic2" layoutX="10.0" layoutY="18.0" prefHeight="850.0" prefWidth="1300.0" style="-fx-background-color: #5b8e5a;">
+            <children>
+                <AnchorPane fx:id="pic3" layoutX="311.0" layoutY="2.0" prefHeight="837.0" prefWidth="975.0" style="-fx-background-color: #F5F5F5;">
+               <children>
+                  <Label fx:id="lblCompanyName" alignment="CENTER" layoutX="85.0" layoutY="106.0" prefHeight="518.0" prefWidth="822.0" text="W.C.Silva &amp; Sons Vegetables Distributors">
+                     <font>
+                        <Font size="40.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+                <Button fx:id="btnAddNewDriver" layoutX="33.0" layoutY="57.0" mnemonicParsing="false" onAction="#AddNewDriverOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Add New Driver">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnAddNewVehical" layoutX="33.0" layoutY="215.0" mnemonicParsing="false" onAction="#AddNewVehicalOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Add New Vehical">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnRemoveVehical" layoutX="33.0" layoutY="291.0" mnemonicParsing="false" onAction="#RemoveVehicalOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Remove Vehical">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnAddNewCustomer" layoutX="33.0" layoutY="371.0" mnemonicParsing="false" onAction="#AddNewCustomerOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Add New Customer">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnSupplierOrder" layoutX="33.0" layoutY="449.0" mnemonicParsing="false" onAction="#SupplierOrderOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Supplier Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnCustomerOrder" layoutX="33.0" layoutY="527.0" mnemonicParsing="false" onAction="#CustomerOrderOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Customer Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnDeliveryOrder" layoutX="33.0" layoutY="607.0" mnemonicParsing="false" onAction="#DeliverOrderOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Delivery Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button fx:id="btnRemoveDriver" layoutX="33.0" layoutY="138.0" mnemonicParsing="false" onAction="#RemoveDriverOnAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Remove Driver">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnAdminLogin" layoutX="33.0" layoutY="755.0" mnemonicParsing="false" onAction="#AdminLoginONAction" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 26; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Admin Login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="btnCompleteDeliveryOrder" layoutX="33.0" layoutY="679.0" mnemonicParsing="false" onAction="#completeDeliveryOrder" prefHeight="50.0" prefWidth="230.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5; -fx-font-size: 24; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 10;" text="Complete Delivery Order">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>

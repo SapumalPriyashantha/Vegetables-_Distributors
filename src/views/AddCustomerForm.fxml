@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pic1" prefHeight="837.0" prefWidth="975.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddCustomerFormController">
+    <children>
+        <Label fx:id="lblAddNewCustomer" alignment="CENTER" layoutY="-1.0" prefHeight="174.0" prefWidth="975.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5;" text="Add New Customer">
+            <font>
+                <Font size="45.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="36.0" layoutY="381.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="290.0" promptText="Amal Perera" />
+        <TextField fx:id="txtAddress" layoutX="36.0" layoutY="478.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="290.0" promptText="Colombo 7" />
+        <TextField fx:id="txtNumber" layoutX="36.0" layoutY="573.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="290.0" promptText="07xxxxxxxx" />
+        <Button fx:id="btnAddCustomer" layoutX="151.0" layoutY="667.0" mnemonicParsing="false" onAction="#AddCustomerOnAction" style="-fx-background-color: #64dd17; -fx-text-fill: #F5F5F5; -fx-font-size: 25; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 15;" text="Add Customer">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <TextField fx:id="txtId" layoutX="36.0" layoutY="283.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="290.0" promptText="C-000" />
+      <Label layoutX="36.0" layoutY="254.0" text="Customer Id" />
+      <Label layoutX="36.0" layoutY="350.0" text="Customer Name" />
+      <Label layoutX="36.0" layoutY="449.0" text="Shop Address" />
+      <Label layoutX="40.0" layoutY="545.0" text="Customer Contact number" />
+      <TableView fx:id="tblAddNewCustomer" layoutX="356.0" layoutY="254.0" prefHeight="519.0" prefWidth="594.0">
+        <columns>
+          <TableColumn fx:id="colCustomerId" prefWidth="150.0" text="Customer Id" />
+          <TableColumn fx:id="colCustomerName" prefWidth="150.0" text="Customer Name" />
+            <TableColumn fx:id="colShopAddress" prefWidth="150.0" text="Shop Address" />
+            <TableColumn fx:id="colCust_Con_Number" prefWidth="150.0" text="Cust_Con_Number" />
+        </columns>
+      </TableView>
+    </children>
+</AnchorPane>

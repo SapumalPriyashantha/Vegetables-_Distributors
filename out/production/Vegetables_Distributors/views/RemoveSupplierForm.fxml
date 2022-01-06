@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pic1" prefHeight="837.0" prefWidth="975.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveSupplierFormController">
+    <children>
+        <Label fx:id="lblRemoveSupplier" alignment="CENTER" prefHeight="174.0" prefWidth="976.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5;" text="Remove Supplier">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtName" layoutX="293.0" layoutY="374.0" prefHeight="45.0" prefWidth="434.0" promptText="Supplier Name" />
+        <TextField fx:id="txtAddress" layoutX="293.0" layoutY="460.0" prefHeight="45.0" prefWidth="434.0" promptText="Supplier Address" />
+        <TextField fx:id="txtNumber" layoutX="293.0" layoutY="545.0" prefHeight="45.0" prefWidth="434.0" promptText="Supplier Number" />
+        <Button fx:id="btnAddSupplier" layoutX="784.0" layoutY="734.0" mnemonicParsing="false" onAction="#RemoveSupplierOnAction" style="-fx-background-color: #64dd17; -fx-text-fill: #F5F5F5; -fx-font-size: 25; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 15;" text="Remove Supplier">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ComboBox fx:id="cmbSupplierId" layoutX="293.0" layoutY="287.0" prefHeight="45.0" prefWidth="434.0" promptText="Supplier Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+    </children>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="837.0" prefWidth="975.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SupplierWiseCostFormController">
+   <children>
+      <Label alignment="CENTER" prefHeight="119.0" prefWidth="975.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5;" text="Supplierwise Cost">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbSelectSupplierId" layoutX="59.0" layoutY="163.0" prefHeight="31.0" prefWidth="194.0" promptText="Select Supplier Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label fx:id="lblSupplierName" alignment="CENTER" layoutX="279.0" layoutY="163.0" prefHeight="31.0" prefWidth="194.0" text="Supplier Name" />
+      <Label fx:id="lblSupplierAddress" alignment="CENTER" layoutX="501.0" layoutY="163.0" prefHeight="31.0" prefWidth="194.0" text="Supplier Address" />
+      <Label fx:id="lblSupplierNumber" alignment="CENTER" layoutX="732.0" layoutY="163.0" prefHeight="31.0" prefWidth="194.0" text="Supplier Number" />
+      <ComboBox fx:id="cmbSupplierItem" layoutX="59.0" layoutY="245.0" prefHeight="31.0" prefWidth="194.0" promptText="Supplier Item">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <TableView fx:id="tblSupplierwiseCost" layoutX="209.0" layoutY="326.0" prefHeight="419.0" prefWidth="569.0">
+        <columns>
+          <TableColumn fx:id="colOrderDate" prefWidth="181.0" text="Order Date" />
+          <TableColumn fx:id="colOrderId" prefWidth="189.0" text="Order Id" />
+            <TableColumn fx:id="colCost" prefWidth="198.0" text="Cost" />
+        </columns>
+      </TableView>
+      <Label layoutX="239.0" layoutY="760.0" prefHeight="40.0" prefWidth="80.0" text="Total Cost :" />
+      <Label fx:id="lblTotalCost" alignment="CENTER" layoutX="336.0" layoutY="760.0" prefHeight="40.0" prefWidth="80.0" text="0.0 /=" />
+      <Label fx:id="lblDescription" alignment="CENTER" layoutX="279.0" layoutY="245.0" prefHeight="31.0" prefWidth="194.0" text="Description" />
+      <Label fx:id="lblGetUnitPrice" alignment="CENTER" layoutX="501.0" layoutY="245.0" prefHeight="31.0" prefWidth="194.0" text="Get Unit Price" />
+      <Label layoutX="283.0" layoutY="142.0" text="Supplier Name :" />
+      <Label layoutX="509.0" layoutY="142.0" text="Supplier Address :" />
+      <Label layoutX="732.0" layoutY="142.0" text="Supplier Number :" />
+      <Label layoutX="278.0" layoutY="219.0" text="Description :" />
+      <Label layoutX="509.0" layoutY="219.0" text="Get Unit Price :" />
+   </children>
+</AnchorPane>

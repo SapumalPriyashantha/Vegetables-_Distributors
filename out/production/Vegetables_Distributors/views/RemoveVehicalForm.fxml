@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pic1" prefHeight="837.0" prefWidth="975.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RemoveVehicalFormController">
+    <children>
+        <Label fx:id="lblRemoveVehical" alignment="CENTER" prefHeight="174.0" prefWidth="975.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5;" text="Remove Vehical">
+            <font>
+                <Font size="50.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtVehicalNumber" layoutX="293.0" layoutY="407.0" prefHeight="45.0" prefWidth="434.0" promptText="Vehical Number" />
+        <TextField fx:id="txtVehicalType" layoutX="293.0" layoutY="502.0" prefHeight="45.0" prefWidth="434.0" promptText="Vehical Type" />
+        <Button fx:id="btnRemoveVehical" layoutX="784.0" layoutY="734.0" mnemonicParsing="false" onAction="#RemoveVehicalOnAction" style="-fx-background-color: #64dd17; -fx-text-fill: #F5F5F5; -fx-font-size: 25; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 15;" text="Remove Vehical">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+        <ComboBox fx:id="cmbVehicalId" layoutX="293.0" layoutY="304.0" prefHeight="45.0" prefWidth="434.0" promptText="Vehical Id">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+    </children>
+</AnchorPane>

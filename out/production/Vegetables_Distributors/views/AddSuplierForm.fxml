@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pic1" prefHeight="837.0" prefWidth="975.0" style="-fx-background-color: #F5F5F5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddSuplierFormController">
+   <children>
+      <Label fx:id="lblAddSupplier" alignment="CENTER" prefHeight="174.0" prefWidth="976.0" style="-fx-background-color: #1a237e; -fx-text-fill: #F5F5F5;" text="Add Supplier">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtId" layoutX="42.0" layoutY="280.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="273.0" promptText="S-000" />
+      <TextField fx:id="txtName" layoutX="42.0" layoutY="380.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="273.0" promptText="Amal Perera" />
+      <TextField fx:id="txtAddress" layoutX="42.0" layoutY="481.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="273.0" promptText="ABc7" />
+      <TextField fx:id="txtNumber" layoutX="42.0" layoutY="578.0" onKeyReleased="#textFields_Key_Released" prefHeight="45.0" prefWidth="273.0" promptText="07xxxxxxxx" />
+      <Button fx:id="btnAddSupplier" layoutX="179.0" layoutY="680.0" mnemonicParsing="false" onAction="#AddSupplierOnAction" style="-fx-background-color: #64dd17; -fx-text-fill: #F5F5F5; -fx-font-size: 25; -fx-font-family: &quot;Gabriola&quot;; -fx-background-radius: 15;" text="Add Supplier">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="42.0" layoutY="252.0" text="Supplier Id" />
+      <Label layoutX="46.0" layoutY="349.0" text="Supplier Name" />
+      <Label layoutX="46.0" layoutY="444.0" text="Supplier Address" />
+      <Label layoutX="42.0" layoutY="544.0" text="Supplier Contact Number" />
+      <TableView fx:id="tblAddSupplier" layoutX="342.0" layoutY="253.0" prefHeight="501.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="colSupplierId" prefWidth="150.0" text="Supplier Id" />
+          <TableColumn fx:id="colSupplierName" prefWidth="150.0" text="Supplier Name" />
+            <TableColumn fx:id="colSupplierAddress" prefWidth="158.0" text="Supplier Address" />
+            <TableColumn fx:id="colSupplierCon_Num" prefWidth="150.0" text="Supplier_Con_Num" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
